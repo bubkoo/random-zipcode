@@ -1,0 +1,46 @@
+{
+  "name": "random-zipcode",
+  "version": "0.0.0",
+  "description": "Generate a random zipcode.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint index.js",
+    "pretest": "npm run lint",
+    "test": "mocha -R spec",
+    "test:cov": "rm -rf ./test/coverage && istanbul cover _mocha --dir ./test/coverage -- -R spec",
+    "test:rpt": "npm run test:cov && coveralls < ./test/coverage/lcov.info",
+    "prepublish": "npm test"
+  },
+  "author": {
+    "name": "bubkoo",
+    "email": "bubkoo.wy@gmail.com"
+  },
+  "keywords": [
+    "zipcode",
+    "zip",
+    "code",
+    "generator",
+    "generate",
+    "gen",
+    "random",
+    "randomly",
+    "randomize",
+    "rand"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bubkoo/random-zipcode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bubkoo/random-zipcode/issues"
+  },
+  "homepage": "https://github.com/bubkoo/random-zipcode#readme",
+  "devDependencies": {
+    "jshint": "^2.9.1",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5"
+  }
+}
