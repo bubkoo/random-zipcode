@@ -1,7 +1,7 @@
 {
   "name": "random-zipcode",
   "version": "0.0.0",
-  "description": "Generate a random zipcode.",
+  "description": "Generate a random chinese zipcode.",
   "main": "index.js",
   "scripts": {
     "lint": "jshint index.js",
@@ -25,7 +25,8 @@
     "random",
     "randomly",
     "randomize",
-    "rand"
+    "rand",
+    "chinese"
   ],
   "license": "MIT",
   "repository": {

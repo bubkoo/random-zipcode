@@ -1,6 +1,6 @@
 # random-zipcode
 
-> Generate a random zipcode.
+> Generate a random chinese zipcode.
 
 [![MIT License](https://img.shields.io/badge/license-MIT_License-green.svg?style=flat-square)](https://github.com/bubkoo/random-zipcode/blob/master/LICENSE)
 
