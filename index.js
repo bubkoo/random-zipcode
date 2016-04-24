@@ -1,5 +1,26 @@
 'use strict';
 
-module.exports = function () {
-  return '' + (Math.round(Math.random() * (999999 - 100000)) + 100000);
+var randomNatural = require('random-natural');
+
+module.exports = function (plusFour) {
+
+  var i = 5;
+
+  var result = '';
+
+  while (i--) {
+    result += randomNatural(0, 9).toString();
+  }
+
+  if (plusFour) {
+
+    result += '-';
+
+    i = 4;
+    while (i--) {
+      result += randomNatural(0, 9).toString();
+    }
+  }
+
+  return result;
 };
