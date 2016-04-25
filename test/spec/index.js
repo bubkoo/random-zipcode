@@ -10,7 +10,7 @@ describe('random-zip: ', function () {
 
     while (count--) {
       expect(randomZip()).to.match(/^[\d]{5}$/);
-      expect(randomZip(true)).to.match(/^[\d]{5}-\d{4}$/);
+      expect(randomZip({ plusfour: true })).to.match(/^[\d]{5}-\d{4}$/);
     }
   });
 });

@@ -1,6 +1,6 @@
 {
   "name": "random-zipcode",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate a random (U.S.) zip code.",
   "main": "index.js",
   "scripts": {
@@ -45,6 +45,6 @@
     "mocha": "^2.4.5"
   },
   "dependencies": {
-    "random-natural": "^1.0.2"
+    "random-natural": "^1.0.3"
   }
 }

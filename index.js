@@ -2,23 +2,23 @@
 
 var randomNatural = require('random-natural');
 
-module.exports = function (plusFour) {
+module.exports = function (options) {
 
   var i = 5;
 
   var result = '';
 
   while (i--) {
-    result += randomNatural(0, 9).toString();
+    result += randomNatural({ min: 0, max: 9, inspected: true }).toString();
   }
 
-  if (plusFour) {
+  if (options && options.plusfour) {
 
     result += '-';
 
     i = 4;
     while (i--) {
-      result += randomNatural(0, 9).toString();
+      result += randomNatural({ min: 0, max: 9, inspected: true }).toString();
     }
   }
 
